@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="4"
+    android:background="#101010"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:src="@drawable/android"
+        android:layout_margin="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        android:layout_weight="1"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:hint="Name"
+            android:maxLines="1"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColorHint="#fff"
+            android:background="@drawable/edit_text_style"/>
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:hint="Email"
+            android:maxLines="1"
+            android:inputType="textEmailAddress"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColorHint="#fff"
+            android:background="@drawable/edit_text_style"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:hint="Password"
+            android:maxLines="1"
+            android:inputType="textPassword"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColorHint="#fff"
+            android:background="@drawable/edit_text_style"/>
+
+        <EditText
+            android:id="@+id/re_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:hint="Retype your password"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColorHint="#fff"
+            android:background="@drawable/edit_text_style"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTER"
+        android:layout_gravity="center"
+        android:textColor="#9b9393"/>
+
+    <TextView
+        android:id="@+id/signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Already have an account? Sign in"
+        android:textColor="#5ee2da"
+        android:gravity="center"/>
+</LinearLayout>
